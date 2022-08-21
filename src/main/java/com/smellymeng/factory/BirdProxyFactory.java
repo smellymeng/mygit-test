@@ -20,7 +20,7 @@ public class BirdProxyFactory{
                 target.getClass().getInterfaces(), new InvocationHandler() {
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                Bird bird = new Bird("male","kiuii");
+                Bird bird = new Bird("male","yamashita");
                 String ret = (String)method.invoke(target, args);
                 return bird + ret;
             }
