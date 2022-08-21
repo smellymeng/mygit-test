@@ -8,7 +8,7 @@ public class Test {
         BirdProxyFactory factory = new BirdProxyFactory(new Action() {
             @Override
             public String moving() {
-                return "is swimming";
+                return "is climbing" + ", ver.2";
             }
         });
         Action birdProxy = (Action)factory.getBirdProxy();
